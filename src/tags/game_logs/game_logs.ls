@@ -1,0 +1,1 @@
+@message = \game_logs
