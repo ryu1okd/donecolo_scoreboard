@@ -2,4 +2,9 @@ game_logs
   div
     |GAME LOGS
 
+    button(onclick='{win}' value='1') Player1 WIN
+    button(onclick='{win}' value='2') Player2 WIN
+  ul
+    li(each='{game_result in game_results_desc}') {game_result.player1} : {game_result.player2}
+
     script(type='text/livescript' src='game_logs.ls')
