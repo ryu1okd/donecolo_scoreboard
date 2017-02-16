@@ -1,0 +1,21 @@
+{
+  "name": "donecolo_scoreboard",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ryu1okd <r122.project@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.0",
+    "prelude-ls": "^1.1.2"
+  }
+}
