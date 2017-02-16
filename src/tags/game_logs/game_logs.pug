@@ -1,10 +1,20 @@
 game_logs
-  div
+  h3
     |GAME LOGS
-
+  div
     button(onclick='{win}' value='1') Player1 WIN
     button(onclick='{win}' value='2') Player2 WIN
-  ul
-    li(each='{game_result in game_results_desc}') {game_result.player1} : {game_result.player2}
+    //button(onclick='{back}' disabled='{game_results.length < 1}') back
+  table
+    thead
+      th game
+      th p1
+      th p2
+    tbody
+      tr(each='{game_result, i in game_results_desc()}')
+        td {game_results.length - i} 
+        td {game_result.p1} 
+        td {game_result.p2}
 
-    script(type='text/livescript' src='game_logs.ls')
+  script(type='text/livescript' src='game_logs.ls')
+

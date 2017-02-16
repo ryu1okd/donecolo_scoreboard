@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.0",
     "gulp-livescript": "^3.0.1",
     "gulp-riot": "^1.0.6",
     "livescript": "^1.5.0",

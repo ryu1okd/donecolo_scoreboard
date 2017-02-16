@@ -1,6 +1,26 @@
 player
-  div(class='player') {player}
+  table
+    thead
+      th name
+      th wins
+      th adv
+      th continuing
+      th set
+    tbody
+      tr
+        td {p1.name}
+        td {p1.wins}
+        td 
+          span(show='{p1.adv}') ADV
+        td {p1.continuing}
+        td {p1.set}
+      tr
+        td {p2.name}
+        td {p2.wins}
+        td
+          span(show='{p2.adv}') ADV
+        td {p2.continuing}
+        td {p2.set}
 
-    script(type='text/livescript' src='player.ls')
+  script(type='text/livescript' src='player.ls')
 
-    style
