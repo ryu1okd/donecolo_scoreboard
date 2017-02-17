@@ -1,20 +1,28 @@
 game_logs
-  h3
-    |GAME LOGS
   div
-    button(onclick='{win}' value='1') Player1 WIN
-    button(onclick='{win}' value='2') Player2 WIN
-    //button(onclick='{back}' disabled='{game_results.length < 1}') back
-  table
-    thead
-      th game
-      th p1
-      th p2
-    tbody
-      tr(each='{game_result, i in game_results_desc()}')
-        td {game_results.length - i} 
-        td {game_result.p1} 
-        td {game_result.p2}
+    div(class='row')
+      div(class='col s12 center-align')
+        button(onclick='{win}' value='1' class='waves-effect waves-light btn-large red') P1 WIN
+        button(onclick='{win}' value='2' class='waves-effect waves-light btn-large blue') P2 WIN
+        //button(onclick='{back}' disabled='{game_results.length < 1}') back
+    div(class='row')
+      div(class='col s10')
+        h5
+          |GAME LOGS
+      div(class='col s2')
+        a(onclick='location.reload();' class='waves-effect btn-floating secondary-content white') 
+          i(class='small material-icons grey-text') clear_all
+      div(class='col s12')
+        table
+          thead
+            th game
+            th p1
+            th p2
+          tbody
+            tr(each='{game_result, i in game_results_desc()}')
+              td {game_results.length - i} 
+              td {game_result.p1} 
+              td {game_result.p2}
 
   script(type='text/livescript' src='game_logs.ls')
 
