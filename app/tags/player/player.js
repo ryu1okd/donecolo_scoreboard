@@ -49,10 +49,14 @@ this.update_info = function(p){
     p.point += 1;
   }
   if (p.point === 2) {
-    p.set += 1;
-    p.continuous = 0;
-    p.point = 0;
+    this.add_set(p);
   }
+};
+this.add_set = function(p){
+  p.set += 1;
+  this.p1.continuous = this.p2.continuous = 0;
+  this.p1.point = this.p2.point = 0;
+  console.log('ADDPOINT');
 };
 this.on('update', function(){
   this.update_info(this.p1);
