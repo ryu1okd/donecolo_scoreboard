@@ -16,11 +16,6 @@
   ],
   "dependencies": {
     "materialize": "^0.98.0",
-<<<<<<< HEAD
-    "prelude-ls": "^1.1.2",
-    "jquery": "^3.1.1"
-=======
     "prelude-ls": "^1.1.2"
->>>>>>> c3f38d22842750a97a58c8f36c7644a260ee188f
   }
 }

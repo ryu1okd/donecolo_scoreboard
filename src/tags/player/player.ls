@@ -30,13 +30,11 @@ require! \prelude-ls : {map, filter, last}
     p.point += 1
   if p.point is 2
     @add_set p
-  #console.log JSON.stringify p
 
 @add_set = (p) !->
   p.set += 1
   @p1.continuous = @p2.continuous = 0
   @p1.point = @p2.point = 0
-  console.log \ADDPOINT
 
 @on \update, !->
   @update_info @p1
