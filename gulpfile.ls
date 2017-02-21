@@ -30,6 +30,7 @@ gulp.task \riot !->
 gulp.task \pug1 ->
   gulp.src \index.pug
     .pipe gulp-pug!
+    .pipe gulp.dest \.
 
 gulp.task \pug2 ->
   gulp.src \src/index.pug
