@@ -12,7 +12,16 @@ html
       div(class='nav-wrapper')
         span(class='brand-logo center')
           | Donation Colloseum
-        span(class='version right')
-          | v0.0.1β
     div(class='container')
       include templates/main.pug
+  footer(class='page-footer indigo' style={padding:0})
+    div(class='container')
+      div(class='row')
+        div(class='col s12 center-align')
+          a(class='btn-flat grey-text' href='/donecolo_scoreboard/') top
+          a(class='btn-flat grey-text' href='/donecolo_scoreboard/app/') app
+        div(class='footer-copylight center white-text')
+          |Provided by 
+          a(href='https://twitter.com/ryu1_okd') @ryu1_okd
+          span(class='right white-text') v0.0.1β
+
