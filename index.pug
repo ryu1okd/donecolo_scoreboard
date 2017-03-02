@@ -16,8 +16,85 @@ html
             | by Daigo the BeasTV
     div(class='container')
       p 
-        |ドネーションコロシアム
-        |非公式スコアメモアプリ
+        |ドネーションコロシアムの
+        br
+        |非公式スコアメモアプリです。
       div(class='center-align')
         a(href='app' class='btn-large waves-effect') app
+      hr
+      div(class='about')
+        div
+          h3 Donation Colloseum Scoreboardとは？
+          p
+            a(href='https://www.twitch.tv/' target='_blank') twitch
+            | にて放送中の
+            a(href='https://www.twitch.tv/daigothebeastv' target='_blank') Daigo the BeasTV
+            | の企画「ドネーションコロシアム」で使わている特殊ポイントルールのスコアをメモする非公式WEBアプリです。
+          h3 ドネーションコロシアムとは？
+          p
+            a(href='http://kakuge-checker.com/topic/view/04738/' target='_blank') 格ゲーチェッカー
+            | にて詳しく載っています。
+          h3 ルール説明
+          ul
+            li ・○セット先取の試合形式で行う
+            li ・2ポイントで1セット獲得
+            li ・2連勝すると1ポイント獲得
+            li ・3連勝すると2ポイント獲得(その時点で1セット獲得となる)
+
+          h5 例
+          table(class='striped')
+            thead
+              th &nbsp;
+              th Player1
+              th Player2
+              th &nbsp;
+            tbody
+              tr
+                td 第1試合
+                td ○
+                td ☓
+                td
+              tr
+                td 第2試合
+                td ○
+                td ☓
+                td ←P1 + 1pt
+              tr
+                td 第3試合
+                td ○
+                td ☓
+                td ←P1 + 1pt = 2pt => 1set
+              tr
+                td 第4試合
+                td ☓
+                td ○
+                td
+              tr
+                td 第5試合
+                td ☓
+                td ○
+                td ←P2 + 1pt
+              tr
+                td 第6試合
+                td ○
+                td ☓
+                td
+              tr
+                td 第7試合
+                td ☓
+                td ○
+                td
+              tr
+                td 第8試合
+                td ☓
+                td ○
+                td ←P2 + 1pt = 2pt => 1set 
+          h3 Comming Soon
+          ul
+            li ・Player部分をカード表示で見やすく
+            li ・試合履歴の戻るボタン追加
+            li ・キャラ画像を表示させたい(引用元探してます)
+            li ・Twitter投稿機能
+
+
     script(type='text/javascript' src='./analytics.js')
